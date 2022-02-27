@@ -1,0 +1,33 @@
+I"�<h1 id="project-description">Project description</h1>
+
+<p>Our best estimates show there are over 7 billion people on the planet and 300 billion stars in the Milky Way galaxy. By comparison, the adult human body contains 37 trillion cells. To determine the function and relationship among these cells is a monumental undertaking. Many areas of human health would be impacted if we better understand cellular activity. A problem with this much data is a great match for the Kaggle community.</p>
+
+<p>Just as the Human Genome Project mapped the entirety of human DNA, the Human BioMolecular Atlas Program (HuBMAP) is a major endeavor. Sponsored by the National Institutes of Health (NIH), HuBMAP is working to catalyze the development of a framework for mapping the human body at a level of glomeruli functional tissue units for the first time in history. Hoping to become one of the world’s largest collaborative biological projects, HuBMAP aims to be an open map of the human body at the cellular level.</p>
+
+<p>This competition, “Hacking the Kidney,” starts by mapping the human kidney at single cell resolution.</p>
+
+<p>Your challenge is to detect functional tissue units (FTUs) across different tissue preparation pipelines. An FTU is defined as a “three-dimensional block of cells centered around a capillary, such that each cell in this block is within diffusion distance from any other cell in the same block” (de Bono, 2013). The goal of this competition is the implementation of a successful and robust glomeruli FTU detector.</p>
+
+<p>You will also have the opportunity to present your findings to a panel of judges for additional consideration. Successful submissions will construct the tools, resources, and cell atlases needed to determine how the relationships between cells can affect the health of an individual.</p>
+
+<p>Advancements in HuBMAP will accelerate the world’s understanding of the relationships between cell and tissue organization and function and human health. These datasets and insights can be used by researchers in cell and tissue anatomy, pharmaceutical companies to develop therapies, or even parents to show their children the magnitude of the human body.</p>
+
+<h1 id="exploratory-analysis">Exploratory analysis</h1>
+<h2 id="data-structure">Data structure</h2>
+<p>The dataset contains information about 15 histological kidney samples. For each sample, the following features are provided.</p>
+<ul>
+  <li>A tiff image of the histological sample with a resolution of 20/40k pixels in width or height</li>
+  <li>Tabular information about the resolution of the image and the laterality of the source kidney, and also the dornor’s information: race, etnicity, sex, age, weight, height and bmi.</li>
+  <li>The regions of the image corresponding to two kinds of tissues: Medula and cortex</li>
+  <li>The regions of the image corresponding to the glomerula. This information is the feature to predict.</li>
+</ul>
+
+<h2 id="images">Images</h2>
+<p>Regarding the images, several details must be noted. First two of the images are deffective and cannot be loaded (e79de561c and 54f2eec69). Therefore, the number of available samples is not 15 but 13. On the other hand, 4 images only have one channel whilst the other 9 have 3. To be able to include all the samples in the analysis, images with 3 channels will be reduced to 1. An alternative could be ignoring the 4 samples with only one channel and compare the performance of the two models. The following image shows the thumbnails and sample ids of the available samples. 
+<img src="/assets/2021-05-11-hubmap/all_samples.png" alt="All samples" width="700" /></p>
+
+<p><img src="/assets/2021-05-11-hubmap/all_samples_cortex_glom.png" alt="Cortex and glomerula" width="700" /></p>
+
+<h1 id="approach">Approach</h1>
+<h1 id="results">Results</h1>
+:ET
