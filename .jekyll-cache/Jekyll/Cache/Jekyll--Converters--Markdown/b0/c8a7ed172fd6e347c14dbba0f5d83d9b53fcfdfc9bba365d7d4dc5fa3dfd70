@@ -1,4 +1,4 @@
-I"¿<h1 id="project-description">Project description</h1>
+I"¢<h1 id="project-description">Project description</h1>
 
 <p>Our best estimates show there are over 7 billion people on the planet and 300 billion stars in the Milky Way galaxy. By comparison, the adult human body contains 37 trillion cells. To determine the function and relationship among these cells is a monumental undertaking. Many areas of human health would be impacted if we better understand cellular activity. A problem with this much data is a great match for the Kaggle community.</p>
 
@@ -56,5 +56,7 @@
 
 <h1 id="results">Results</h1>
 
-<p><img src="/assets/2021-05-11-hubmap/test_prediction.png" alt="Model scheme" width="700" /></p>
+<p>The resulting model was able to achieve decent performance with a dice score around 0.4 in the testing set. Here, I show some images of the testing set, along with the true mask and the predicted mask from left to right. Although in some cases there are some false positives and background noise, the model is able to pick up almost all the glomerula in the sample of images. To pick these images, I have filtered those with at least 10% of positve pixels in the true mask.</p>
+
+<p><img src="/assets/2021-05-11-hubmap/test_predictions.png" alt="Model scheme" width="700" /></p>
 :ET
