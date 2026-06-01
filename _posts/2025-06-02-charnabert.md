@@ -2,7 +2,7 @@
 layout: post
 title: "ChaRNABERT: A character-level RNA foundation model"
 subtitle: "Accepted at ICLR 2025 — Learning Meaningful Representations of Life Workshop"
-background: '/assets/2025-06-02-charnabert/charnabert_background.png'
+background: '/assets/2025-06-02-charnabert/charnabert_background.jpg'
 ---
 
 Protein language models like ESM have reshaped computational biology. RNA has been harder: the same four letters can fold into very different structures, and most existing RNA models rely on hand-picked tokenization schemes—single nucleotides, codons, or fixed k-mers—that bake in assumptions about what matters in a sequence.
